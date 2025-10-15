@@ -99,7 +99,7 @@ h4{
 /* header section */
 
 .header-sec{
-    /* background-color: var(--black-color); */
+    background-color: var(--black-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -159,13 +159,12 @@ h4{
 /* banner section */
 
 .banner-sec{
-    padding: 305px 0px;
+    padding: 306px 0px;
     background-image: url("../image/banner-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: 0px 4px 4px #000000;
-    padding-bottom: 149px;
 }
 
 .banner-main-div h1{
@@ -198,6 +197,7 @@ h4{
 
 .dreamer-sec{
     padding-bottom: 149px;
+    padding-top: 109px;
     background-color: var(--black-color);
 }
 
@@ -227,7 +227,7 @@ h4{
     align-items: center;
     justify-content: center;
     border: solid 1px #F1E28C;
-    border-image: linear-gradient(to bottom, #312F22, #F1E28C, #110E03) 1;
+    /* border-image: linear-gradient(to bottom, #312F22, #F1E28C, #110E03) 1; */
     background-color: #2B2B2B;
     padding: 23px 25px;
     border-radius: 30px !important;
@@ -321,8 +321,7 @@ h4{
     padding: 16px 26px;
     line-height: 100%;
     background-color: rgba(8, 8, 6, 0.48);
-    /* position: absolute; */
-    z-index: 99;
+    margin-bottom: 10px;
 }
 
 .dream-come-card .card figcaption a img{
@@ -433,7 +432,7 @@ h4{
 
 .services-inner-child-div figure img{
     border-radius: 34px;
-    height: 400px;
+    /* height: 400px; */
 }
 
 /* special offer */
@@ -636,6 +635,7 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   background: var(--black-color);
 }
@@ -649,6 +649,12 @@ h4{
 }
 .offcanvas {
   background: var(--black-color);
+}
+
+.offcanvas-end {
+    width: 300px !important;
+    border-left: none;
+    transform: translateX(100%);
 }
 
 /* midia quare */
@@ -691,10 +697,20 @@ h4{
     }
     .div-1, .div-2{
     letter-spacing: 0px;
-}
+    }
+     .services-inner-child-div figure img {
+        height: 270px;
+    }
 }
 
 @media (max-width:992px) {
+    .nav-icon{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fa-magnifying-glass{
+        margin: 8px 0px 16px 0px ;
+    }
     .dreamer-title h2 {
         width: 100%;
     }
@@ -705,7 +721,9 @@ h4{
         margin-bottom: 20px;
         text-align: center;
     }
-    
+    /* .services-inner-child-div figure img {
+        height: 100%;
+    } */
 .special-offer-title h2 {
     width: 100%;
     font-size: 50px !important;
@@ -755,18 +773,38 @@ h4{
     .dream-come-span span {
         font-size: 20px;
     }
+    .dream-come-para p{
+        width: 100%;
+    }
     .services-sec .services-para p{
         width: 100%;
     }
     .services-inner-child-div p{
         font-size: 22px;
     }
+    .services-inner-child-div figure img {
+        height: 100%;
+    }
+     .services-child-div {
+        padding: 30px 10px !important;
+     }
+     .row {
+    --bs-gutter-x: 0rem !important;
+     }
     .special-offer-child-div{
         flex-direction: column;
     }
     .footer-child-div form a {
     margin: 7px 0px 0px -105px;
-}
+    }
+    .dreamer-video-icon{
+        width: 60px;
+    }
+    .dreamer-sec {
+        padding-bottom: 80px;
+        padding-top: 70px;
+    }
+    
 /* .special-offer-main-div{
     display: flex;
     width: 16%;
@@ -787,12 +825,25 @@ h4{
     h2{
         font-size: 39px !important;
     }
-    .services-inner-child-div figure img {
-        height: 300px;
-    }
         .footer-child-div form a {
     margin: 7px 0px 0px -100px;
-}
+    }
+     .dreamer-video-icon{
+        width: 40px;
+    }
+     .dreamer-sec {
+        padding-bottom: 60px;
+    }
+    .dreamer-title h2 {
+        padding-bottom: 50px;
+    }
+    h4 {
+        font-size: 21px !important;
+    }
+    .dream-come-card .card figure img {
+        height: 330px;
+
+    }
 }
 
 @media (max-width:460px) {
@@ -819,7 +870,7 @@ h4{
     h3{
         font-size: 30px !important;
     }
-     .services-inner-child-div figure img {
-        height: 200px;
-    }
+     .services-child-div {
+        padding: 20px 10px !important;
+     }
 }
